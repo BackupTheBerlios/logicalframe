@@ -38,6 +38,8 @@ include_once("platform/class.platformpage.inc");
       $this->m_smarty->assign("role",$this->getUserRole());
     }/*}}}*/
 
+
+
     /**
      * 
      */
@@ -106,6 +108,43 @@ include_once("platform/class.platformpage.inc");
       $resultset = $this->m_db->getAssoc($query);          
       return $resultset;
     }
+    
+    
+    /**
+     * 
+     */
+    function getTeamData($nationality)
+    {
+      debug(__CLASS__."::".__FUNCTION__." : ");
+      $this->useDb();
+      $query="SELECT
+                *
+              FROM 
+               teams
+              WHERE 
+               nationality ='".$nationality."'";   
+      $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      return $resultset;
+    }
+
+
+
+
+   /**
+     * 
+     */
+    function getCountries()
+    {
+      $this->useDb();
+      $query="SELECT
+               country_id,
+               country
+              FROM 
+               countries";   
+      $resultset = $this->m_db->getAssoc($query);          
+      return $resultset;
+    }
+
 
 
     /**
@@ -143,6 +182,76 @@ include_once("platform/class.platformpage.inc");
       {
       }
     }
+
+    /**
+     * 
+     */
+    function incrementTeam($player_id,$nationality)
+    {
+      $query= "UPDATE teams set memberamount=memberamount+1 WHERE nationality='$nationality'";
+      $this->useDb();
+      if($this->m_db->query($query))
+      {
+        $result2 = $this->m_db->getAll("SELECT team_id FROM teams where nationality='$nationality'",DB_FETCHMODE_ASSOC);
+        debug(__CLASS__."::".__FUNCTION__." : returning player_id");
+        return $result2[0]['team_id'];
+      }
+    }
+
+    /**
+     * 
+     */
+    function createTeam($nationality)
+    {
+      $query= "INSERT INTO teams (`nationality`,`memberamount`) VALUES ('$nationality','1')";
+      $this->useDb();
+      if($this->m_db->query($query))
+      {
+
+        $result2 = $this->m_db->getAll("SELECT LAST_INSERT_ID() as last_id",DB_FETCHMODE_ASSOC);
+        debug(__CLASS__."::".__FUNCTION__." : returning team_id");
+        return $result2[0]['last_id'];
+      }
+    }
+
+
+
+    /**
+     * 
+     */
+    function assignTeamMember($player_id,$team_id)
+    {
+      $query= "UPDATE players set team_id='$team_id' WHERE player_id='$player_id'";
+      $this->useDb();
+      if($this->m_db->query($query))
+      {
+        debug(__CLASS__."::".__FUNCTION__." : assigned player succesfully");
+        return true;
+      }
+    }
+
+
+
+    function addplayer($data = array())
+    {
+      extract($data);
+      $query= "INSERT INTO 
+                 `players` (`surname` , `height` , `weight`, `nationality`)
+               VALUES ('$name','$height', '$weight', '$nationality')";
+      $this->useDb();
+      if($this->m_db->query($query))
+      {
+        $result2 = $this->m_db->getAll("SELECT LAST_INSERT_ID() as last_id",DB_FETCHMODE_ASSOC);
+        debug(__CLASS__."::".__FUNCTION__." : returning player_id");
+        return $result2[0]['last_id'];
+      }
+      else
+      {
+        debug(__CLASS__."::".__FUNCTION__." : houston we've got a problem");
+      }
+    }
+
+
 
 
     
