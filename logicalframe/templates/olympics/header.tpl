@@ -111,4 +111,10 @@
                                                                         <tr>
                                                                                 <td valign="top" class="bodytext">
                                                                                                 <!-- end header -->
-  {if $role=="judge"}Hello judge{/if}
+{if $role=="judge"}
+<p><br>
+Logged in as a judge: <br><br>
+<a href="addplayer.php">Add player</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="addplayer.php">Schedule rounds</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="judge.php">Judge Jumps</a>&nbsp;&nbsp;&nbsp;&nbsp;
+{/if}
