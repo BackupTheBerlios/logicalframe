@@ -74,38 +74,37 @@
 
 
     function show() 
+    {
+      $this->m_item="";
+      foreach($this->m_valuelist as $value=>$extra)
+      {
+        $checked="";
+        if(is_array($this->m_value))
+        {
+          foreach($this->m_value as $t_value=>$t_extra)
           {
-                  $this->m_item="";
-                        foreach($this->m_valuelist as $value=>$extra)
-                                {
-                                          $checked="";
-                                                  if(is_array($this->m_value))
-                                                            {
-                                                                        foreach($this->m_value as $t_value=>$t_extra)
-                                                                                    {
-                                                                                                  if($value==$t_extra)
-                                                                                                                {
-                                                                                                                                $checked="checked";
-                                                                                                                                            }
-                                                                                                            }
-                                                                                }  
-                                                           
-                                                          if(is_array($this->m_defaultchecked))
-                                                                    {
-                                                                                foreach($this->m_defaultchecked as $checkedid=>$checkedval)
-                                                                                            {
-                                                                                                          if($value==$checkedid)
-                                                                                                                        {
-                                                                                                                                        $checked="checked";
-                                                                                                                                                    }
-                                                                                                                    }
-                                                                                        }  
-                                                                    
-                                                                  $this->m_item.="<input type=\"checkbox\" name=\"".$this->m_name."[]\" value=\"".$value."\" ".$checked." onclick=\"".$this->m_onclick."\" >&nbsp;&nbsp;".$extra."<br>\n";
-                                                                        }
-                              return $$this->m_item.$this->m_javascriptbuttons;
-;
+            if($value==$t_extra)
+            {
+              $checked="checked";
+            }
           }
- 
+        }  
+        
+        if(is_array($this->m_defaultchecked))
+        {
+          foreach($this->m_defaultchecked as $checkedid=>$checkedval)
+          {
+            if($value==$checkedid)
+            {
+              $checked="checked";
+            }
+          }
+        }  
+        
+        $this->m_item.="<input type=\"checkbox\" name=\"".$this->m_name."[]\" value=\"".$value."\" ".$checked." onclick=\"".$this->m_onclick."\" >&nbsp;&nbsp;".$extra."<br>\n";
+      }
+
+      return $this->m_item.$this->m_javascriptbuttons;
+    }
   }	
 ?>
