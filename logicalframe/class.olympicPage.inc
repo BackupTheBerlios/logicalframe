@@ -50,6 +50,64 @@ include_once("platform/class.platformpage.inc");
       return $this->m_db->query($query);
     }
 
+
+    /**
+     * 
+     */
+    function getRoundSchedule($round_id)
+    {
+      debug(__CLASS__."::".__FUNCTION__." : <b>here</b>");
+      $this->useDb();
+      $query="SELECT 
+                   rounds.round_id,
+                   rounds.name,
+                   rounds.startdate,
+                   rounds.enddate,
+                   ktypes.ktype_id,
+                   ktypes.kpoint,
+                   ktypes.meterpoint,
+                   ktypes.hill,
+                   schedules.schedule_id,
+                   schedules.player_id,
+                   schedules.timestamp,
+                   schedules.team_id,
+                   schedules.round_id,
+                   schedules.ktype_id,
+                   players.player_id,
+                   players.surname,
+                   count(*) as occured,
+                   results.result_id
+                  FROM
+                    rounds LEFT JOIN schedules on (schedules.round_id = rounds.round_id)
+                                  LEFT JOIN players on ( schedules.player_id = players.player_id)
+                                  LEFT JOIN ktypes on (schedules.ktype_id = ktypes.ktype_id)
+                                  LEFT JOIN results on (schedules.player_id = results.player_id) 
+                   WHERE 
+                    rounds.round_id = $round_id
+                  GROUP BY players.surname
+                  HAVING  occured < 2
+                  ORDER BY  schedules.timestamp desc, occured asc";
+
+      $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      return $resultset;
+    }
+
+    /**
+     * 
+     */
+    function getRounds()
+    {
+      $this->useDb();
+      $query="SELECT
+               round_id,
+               name 
+              FROM 
+               rounds";   
+      $resultset = $this->m_db->getAssoc($query);          
+      return $resultset;
+    }
+
+
     /**
      * 
      */
@@ -57,6 +115,8 @@ include_once("platform/class.platformpage.inc");
     {
       extract($data);
 
+
+      // dirty but quick
       $grades[1]=(float) $grade1;
       $grades[2]=(float) $grade2;
       $grades[3]=(float) $grade3;
@@ -71,8 +131,8 @@ include_once("platform/class.platformpage.inc");
       $totalpoints = $judgespoints + $distancepoints;
       
       $query= "INSERT INTO 
-                `results` (`player_id` , `speed` , `distance` , `distancepoints` , `mark1` , `mark2` , `mark3` , `mark4` , `mark5` , `judgespoints`, `totalpoints` )
-                 VALUES ('$players', '$speed', '$distance', '$distancepoints', '$grade1', '$grade2', '$grade3', '$grade4', '$grade5', '$judgespoints','$totalpoints')";
+                `results` (`schedule_id`,`player_id` , `speed` , `distance` , `distancepoints` , `mark1` , `mark2` , `mark3` , `mark4` , `mark5` , `judgespoints`, `totalpoints` )
+                 VALUES ('$scheduleid','$players', '$speed', '$distance', '$distancepoints', '$grade1', '$grade2', '$grade3', '$grade4', '$grade5', '$judgespoints','$totalpoints')";
       $this->useDb();
       if($this->m_db->query($query))
       {

@@ -1,17 +1,41 @@
 {include file=olympics/header.tpl}
 
 
-  <b>{$errors}</b>
-
+  <b>{$errors}
+{$message}</b>
+    
    {$form_begin}
       <table border="0" width="400" cellspacing="0" cellpadding="0">
       <tr>
-              <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Current Session</td>
-              <td>{$item_session}</td>
+              <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Current Round</td>
+              <td>{$item_roundname}</td>
+      </tr>
+      {if $noplayers}
+      <tr>
+              <td width="200" class="formtext" valign="top"><p>This round has no player left to judge</td>
+              <td></td>
+      </tr>
+      {else}
+      <tr>
+              <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Hill Type</td>
+              <td>{$item_roundhill}</td>
+      </tr>
+      <tr>
+              <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">The K-point</td>
+              <td>{$item_kpoint}</td>
+      </tr>
+      <tr>
+              <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">MeterPoint</td>
+              <td>{$item_meterpoint}</td>
+      </tr>
+      <tr>
+              <td width="200" class="formtext"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Player</td>
+              <td>{$item_scheduleid}{$item_players}{$item_player}</td>
+      </tr>
       </tr>
               <tr>
-              <td width="200" class="formtext"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Player</td>
-              <td>{$item_players}</td>
+              <td width="200" class="formtext"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Jumped:</td>
+              <td class="formtext"><br>&nbsp;&nbsp;&nbsp;&nbsp;{$jumpes}<br></td>
       </tr>
       <tr>
               <td width="200" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Speed km/h </td>
@@ -52,6 +76,7 @@
                  <input type ="submit" value="submit"><br>
 
       </tr>
+      {/if} 
       </table>
       {$form_end}
 
