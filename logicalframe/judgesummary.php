@@ -12,7 +12,6 @@
 
   $results = $page->getResult($_GET['result_id']);
   $page->m_smarty->assign("results",$results);
-  var_dump($results);
   
   // show the page
   $page->showPlatformPage("processForm");

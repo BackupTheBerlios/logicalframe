@@ -94,6 +94,164 @@ include_once("platform/class.platformpage.inc");
       return $resultset;
     }
 
+
+    function getRoundResults($round_id)
+    {
+      debug(__CLASS__."::".__FUNCTION__." : <b>here</b>");
+      $this->useDb();
+      $query="SELECT 
+                   rounds.round_id,
+                   rounds.name,
+                   ktypes.ktype_id,
+                   ktypes.kpoint,
+                   ktypes.meterpoint,
+                   ktypes.hill,
+                   schedules.schedule_id,
+                   schedules.timestamp,
+                   schedules.round_id,
+                   schedules.ktype_id,
+                   players.surname,
+                   players.nationality,
+                   results.result_id,
+                   results.speed,
+                   results.distance,
+                   results.distancepoints,
+                   results.mark1,
+                   results.mark2,
+                   results.mark3,
+                   results.mark4,
+                   results.mark5,
+                   results.judgespoints,
+                   results.totalpoints,
+                   results.player_id
+              FROM
+                    rounds LEFT JOIN schedules on (schedules.round_id = rounds.round_id)
+                                  LEFT JOIN players on ( schedules.player_id = players.player_id)
+                                  LEFT JOIN ktypes on (schedules.ktype_id = ktypes.ktype_id)
+                                  LEFT JOIN results on (schedules.player_id = results.player_id) 
+              WHERE 
+                    rounds.round_id=$round_id and players.player_id IS NOT NULL
+              ORDER BY  totalpoints DESC, players.player_id";
+      $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      
+
+      $players= array();
+      $nomoresearch = array();
+
+      $counter = 1;
+      for($i=0;$i<count($resultset);$i++)
+      {
+        $currentplayer = $resultset[$i]['player_id'];
+         
+        // for the first player
+        if($i==0)
+        {
+          $resultset[$i]['rank'] = $counter;
+          $ordered[]= $resultset[$i];
+          $searchplayer = $resultset[$i]['player_id'];
+          // delete this entry
+          unset($resultset[$i]);
+
+          // search for more entries and copy it.
+          foreach($resultset as $k => $resultarray) 
+          {
+            foreach($resultarray as $field => $value) 
+            {
+              if($field=="player_id"&&$value==$searchplayer)
+              {
+                // we found another the second jump, add it.
+                $ordered[] = $resultarray;
+                // now we don't want to look for this player anymore
+                $nomoresearch[]=$searchplayer;
+                // go new ieration
+                $searchplayer= null;
+                $counter++;
+                continue;
+              }
+            }
+          }
+        }
+        else if(!in_array($currentplayer,$nomoresearch))
+        {
+          $resultset[$i]['rank'] = $counter;
+          $ordered[]= $resultset[$i];
+          $searchplayer = $resultset[$i]['player_id'];
+          // delete this entry
+          unset($resultset[$i]);
+
+          // search for more entries and copy it.
+          foreach($resultset as $k => $resultarray) 
+          {
+            foreach($resultarray as $field => $value) 
+            {
+              if($field=="player_id"&&$value==$searchplayer)
+              {
+                // we found another the second jump, add it.
+                $ordered[] = $resultarray;
+                // now we don't want to look for this player anymore
+                $nomoresearch[]=$searchplayer;
+                // go new ieration
+                $searchplayer= null;
+                $counter++;
+                continue;
+              }
+            }
+          }
+        }
+      }
+      return $ordered;
+    }
+
+    /**
+     * 
+     */
+    function searchOn($criteria,$search,$round_id = "")
+    {
+      $this->useDb();
+      $query="
+SELECT 
+                   rounds.round_id,
+                   rounds.name,
+                   ktypes.ktype_id,
+                   ktypes.kpoint,
+                   ktypes.meterpoint,
+                   ktypes.hill,
+                   schedules.schedule_id,
+                   schedules.timestamp,
+                   schedules.round_id,
+                   schedules.ktype_id,
+                   players.surname,
+                   players.nationality,
+                   players.history,
+                   countries.country,
+                   results.result_id,
+                   results.speed,
+                   results.distance,
+                   results.distancepoints,
+                   results.mark1,
+                   results.mark2,
+                   results.mark3,
+                   results.mark4,
+                   results.mark5,
+                   results.judgespoints,
+                   results.totalpoints,
+                   results.player_id
+              FROM
+                    rounds LEFT JOIN schedules on (schedules.round_id = rounds.round_id)
+                                  LEFT JOIN players on ( schedules.player_id = players.player_id)
+                                  LEFT JOIN ktypes on (schedules.ktype_id = ktypes.ktype_id)
+                                  LEFT JOIN results on (schedules.player_id = results.player_id) 
+                                  LEFT JOIN countries on (players.nationality = countries.country_id)
+              WHERE 
+                    players.player_id IS NOT NULL AND $criteria LIKE \"%$search%\"
+              GROUP BY results.result_id
+              ORDER BY  totalpoints DESC, players.player_id";
+      $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      return $resultset;
+    }
+
+
+
     /**
      * 
      */
@@ -109,7 +267,22 @@ include_once("platform/class.platformpage.inc");
       return $resultset;
     }
     
-    
+
+    /**
+     * 
+     */
+    function getRoundsData()
+    {
+      $this->useDb();
+      $query="SELECT rounds.round_id, name, startdate, enddate, kpoint, meterpoint, hill
+              FROM rounds
+              LEFT JOIN schedules ON ( rounds.round_id = schedules.round_id )
+              LEFT JOIN ktypes ON ( schedules.ktype_id = ktypes.ktype_id )
+              GROUP BY name";
+      $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      return $resultset;
+    }
+
     /**
      * 
      */
@@ -124,6 +297,7 @@ include_once("platform/class.platformpage.inc");
               WHERE 
                nationality ='".$nationality."'";   
       $resultset = $this->m_db->getall($query,DB_FETCHMODE_ASSOC);          
+      debug(__CLASS__."::".__FUNCTION__." : ");
       return $resultset;
     }
 
