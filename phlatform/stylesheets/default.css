@@ -1,0 +1,157 @@
+body
+{ 
+   font-family: Trebuchet MS, Verdana, Sans-Serif; 
+   font-size: 11px;
+}
+
+td
+{
+   font-family: Trebuchet MS, Verdana, Sans-Serif; 
+   font-size: 11px;
+}
+
+.thumbnail
+{
+   border: 2px solid #B0C4DE;
+
+}
+
+.gallerytitle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 12px;
+	color: Black;
+}
+
+.thumbnailtd
+{
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.thumbnailinfo
+{
+  vertical-align: bottom;
+  padding-left: 10px;
+  padding-bottom: 25px;
+}
+
+.pagetitle
+{
+	font-family: Trebuchet MS, Verdana, Sans-Serif;
+	font-size: 17px;
+	font-weight: 400;
+	background-color: #F0F8FF;
+	padding: 10px;
+	height: 40px;
+	border-bottom: 1px dotted;
+}
+
+.title
+{
+	font-family: Trebuchet MS, Verdana, Sans-Serif;
+	font-size: 15px;
+	padding: 10px;
+	height: 40px;
+}
+.text
+{
+	font-family: Trebuchet MS, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.text.light
+{
+	color: Gray;
+}
+
+.text.copyright
+{
+	font-size: 11px;
+	font-style: normal;
+	color: #484848;
+}
+
+
+td.information
+{
+	vertical-align: top;
+	background-color: White;	
+}
+
+td.userinformation
+{
+	background-color: #F0F7FF;
+}
+input,text,textarea,select,checkbox
+{
+	border: 1px solid #E6E6FA;
+	font-family: Trebuchet MS,Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background: #F5FFFA;
+	
+}
+
+
+ul
+{
+	font-family: Trebuchet MS;
+	font-weight: 500;
+	list-style: disc;
+}
+
+button
+{
+	background: #B0C4DE;
+	border-bottom: 1px solid #336699;
+	border-left: 1px solid #336699;
+	border-right: 1px solid #336699;
+	border-top: 1px solid #336699;
+	color: #000000;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.boxsolid
+{
+	background: #f6f6f6;
+	border: 1px solid #336699;
+	padding: 20px;
+
+	/*padding: 10px;*/
+}
+
+.textbox
+{
+	border: 1px dotted Black; 
+}
+
+.headerbox
+{
+	background: #F0FFFF;
+	border: 1px solid #DCDCDC;
+	
+}
+
+.mainbox
+{
+	border: 1px dotted #6495ED;
+	background: #B0C4DE;
+	padding: 20px;
+	font-family: Trebuchet MS, Verdana;
+	font: 12px;
+}
+
+.borders
+{
+  border: 1px solid #6495ED;
+  background: #B0C4DE;
+}
+.bullet
+{
+	
+}
