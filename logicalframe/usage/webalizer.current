@@ -1,0 +1,291 @@
+# Webalizer V2.01-10 Incremental Data - 02/09/2004 00:13:58
+2004 2 9 0 13 58
+4914 850 11 37 24 8 8893570 184 30 0
+2 104 743 2 9
+0 0 0 0 0 0
+11 9 3210 4 9 7
+16 10 6277 4 10 6
+35 24 27312 1 23 1
+0 0 0 0 0 0
+145 74 192005 1 69 1
+2687 327 3647772 2 51 6
+1916 368 4491655 5 21 8
+104 38 525339 2 1 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+105 39 525521 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+2 2 360 2
+1 1 180 1
+29 13 45150 1
+112 55 543662 6
+696 122 1642751 17
+715 82 921407 13
+161 29 157870 19
+192 26 215824 7
+260 57 570906 15
+282 78 860752 13
+795 65 698432 8
+404 46 406590 3
+470 119 870686 71
+271 59 838627 4
+419 57 594852 2
+0
+0
+0
+850
+0
+0
+0
+0
+0
+4
+0
+0
+77
+0
+3356
+0
+0
+0
+0
+0
+0
+627
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/
+0 184 1919361125 982802 30 19
+/signup.php
+0 59 0 418207 0 0
+/images/slide9.jpg
+1 282 0 173140 0 0
+/history.php
+0 12 0 147820 0 0
+/images/5.jpg
+1 137 0 91696 0 0
+/login.php
+0 98 0 1102518 0 0
+/images/menu_curve_off_02.gif
+1 136 0 3540 0 0
+/images/slide7.jpg
+1 236 0 248090 0 0
+/decimals.php
+0 2 1 125 0 0
+/images/4.jpg
+1 137 0 144490 0 0
+/images/required.gif
+1 128 4 1958 0 0
+/judge.php
+0 135 0 1709989 0 0
+/images/3.jpg
+1 137 0 100089 0 0
+/images/sep_line.gif
+1 7 0 220 0 0
+/images/slide5.jpg
+1 222 0 487086 0 0
+/schedule.php
+0 10 0 109690 0 0
+/images/2.jpg
+1 137 0 100815 0 0
+/images/pixel.gif
+1 137 0 473 0 0
+/images/arrow.gif
+1 107 0 549 0 0
+/stylesheets/olympics/default.css
+0 150 0 66979 0 0
+/subscribed.php
+0 7 0 74465 0 0
+/images/1.jpg
+1 137 0 120538 0 0
+/logout.php
+0 2 0 10 0 0
+/rules.php
+0 9 0 98694 0 0
+/news.php
+0 16 0 249764 0 0
+/images/slide1.jpg
+1 260 0 316006 0 0
+/images/slide11.jpg
+1 213 0 378156 0 0
+/images/slide.jpg
+1 381 0 243222 0 0
+/search.php
+0 9 0 131814 0 0
+/images/slide10.jpg
+1 211 0 270340 0 0
+/judgesummary.php
+0 28 0 285181 0 0
+/teams.php
+0 14 0 228931 0 0
+/images/dotline_h.gif
+1 134 0 430 0 0
+/subscribe.php
+0 12 1 38802 0 0
+/script/image.js
+0 158 0 24739 0 0
+/scores.php
+0 32 0 348042 0 0
+/images/menu_arrow_grey.gif
+1 134 0 803 0 0
+# End Of Table - urls
+# -sites- (monthly)
+81.70.10.9
+0 2708 542 5453888 11 1076270952
+/
+132.229.137.101
+0 39 27 29143 3 1075910653
+/
+132.229.87.224
+0 77 30 340330 1 1076248833
+/
+62.238.114.176
+0 1597 76 898655 2 1076184136
+/
+193.175.135.97
+0 6 6 1080 4 1075811987
+/
+80.13.227.52
+0 2 1 923 1 1075851427
+/
+217.77.136.229
+0 50 22 300343 1 1076278569
+/
+62.39.204.223
+0 3 1 1199 1 1075831536
+/
+145.94.40.9
+0 303 104 1340393 3 1076284983
+/
+62.238.227.134
+0 127 43 527256 1 1076242910
+/
+217.80.21.93
+0 2 2 360 2 1075764292
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+81.70.10.9
+0 51 25 340137 0 0
+-
+145.94.40.9
+0 53 13 185202 1 1076284983
+/
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+0 203
+http://logicalframe.berlios.de/search.php
+0 383
+http://64.4.16.250/cgi-bin/linkrd
+0 1
+http://logicalframe.berlios.de/subscribed.php
+0 80
+http://logicalframe.berlios.de/
+0 196
+http://logicalframe.berlios.de/login.php
+0 804
+http://logicalframe.berlios.de/scores.php
+0 99
+http://65.54.246.250/cgi-bin/linkrd
+0 1
+http://logicalframe.berlios.de/judge.php
+0 1208
+http://logicalframe.berlios.de//index.php
+0 128
+http://logicalframe.berlios.de/subscribe.php
+0 22
+http://logicalframe.berlios.de//signup.php
+0 31
+http://logicalframe.berlios.de/signup.php
+0 193
+http://developer.berlios.de/projects/logicalframe/
+0 5
+http://logicalframe.berlios.de/rules.php
+0 31
+http://cn.f144.mail.yahoo.com/ym/ShowLetter
+0 1
+http://logicalframe.berlios.de/judgesummary.php
+0 180
+http://logicalframe.berlios.de/teams.php
+0 57
+http://logicalframe.berlios.de/news.php
+0 65
+http://logicalframe.berlios.de//login.php
+0 4
+http://groups.yahoo.com/group/mailinglist_skijumping/message/70
+0 3
+http://logicalframe.berlios.de/index.php
+0 1085
+http://logicalframe.berlios.de/schedule.php
+0 69
+http://logicalframe.berlios.de/history.php
+0 65
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.6) Gecko/2004011
+0 6
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; (R1 1.1))
+0 303
+Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; KITV4 Wanadoo)
+0 2
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.5) Gecko
+0 2877
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1
+0 2
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+0 50
+Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; (R1 1.1))
+0 1597
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Linux Rule
+0 77
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
