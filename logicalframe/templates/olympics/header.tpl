@@ -191,4 +191,7 @@
                                                                                                 <!-- end header -->
 {if $role=="judge"}
 <p><br>
-Logged in as a judge: <br><br>{/if}
+Logged in as a judge: <br><br>
+<a href="addplayer.php">Add player</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="judge.php">Judge Jumps</a>&nbsp;&nbsp;&nbsp;&nbsp;<p>
+{/if}
