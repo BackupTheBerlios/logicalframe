@@ -124,7 +124,7 @@
     $page->addItem("InputField","grade1","in_template");
     $page->m_items['grade1']->addValidation("MinMaxFloat","1","60","1");
     $page->m_items['grade1']->setSize("10");
-    $page->m_items['grade1']->m_validationrule->setErrorMessage("Please enter a grade with at most 1 decimals for judge # 1");
+    $page->m_items['grade1']->m_validationrule->setErrorMessage("Please enter a grade with at most 1 decimal for judge # 1");
     
     $page->addItem("InputField","grade2","in_template");
     $page->m_items['grade2']->addValidation("MinMaxFloat","1","60","1");

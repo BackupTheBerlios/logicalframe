@@ -349,10 +349,10 @@ require_once("misc/configs/config.inc.php");
     function forwardTo($goto)
     {
       $dir = dirname($_SERVER[PHP_SELF]);
-      header("Location: http://$_SERVER[SERVER_NAME]$dir/$goto");
+       //header("Location: http://$_SERVER[SERVER_NAME]$dir/$goto");
 
       // this is for berlios
-      // header("Location: http://$_SERVER[SERVER_NAME]$dir$goto");
+      header("Location: http://$_SERVER[SERVER_NAME]$dir$goto");
       exit();
     }
     
