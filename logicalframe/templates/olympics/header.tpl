@@ -27,7 +27,7 @@
                 <td width="1"><img src="/images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
         <td width="125" align="center" class="topnav_off" bgcolor="#B91450">{if $role!=""}<a href="logout.php" class="topnav">Logout</a>{else}<a href="login.php" class="topnav">Login</a>{/if}</td>
                 <td width="1"><img src="/images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
-                <td width="125" align="center" class="topnav_on" bgcolor="#666666">{if $role!=""}&nbsp;{else}<a href="signup.php" class="topnav">Sign Up</a>{/if}</td>
+                <td width="125" align="center" class="topnav_off" bgcolor="#666666">{if $role!=""}&nbsp;{else}<a href="signup.php" class="topnav">Sign Up</a>{/if}</td>
         </tr>
         <tr>
         <td colspan="9" bgcolor="#eeeeee" height="1"><img src="/images/pixel_white.gif" alt="" width="95" height="1" border="0"></td>
@@ -98,19 +98,18 @@
                                         <td><img src="/images/pixel.gif" alt="" width="15" height="1" border="0"></td>
                                         <td valign="top">
                         <table border="0" width="450" cellspacing="0" cellpadding="0">
-                                                        <tr>   
-                                                        <td valign="top" class="bodytext"><a href="index.php" class="pathlinks">Home</a> -> <a href="signup.php" class="pathlinks">Sign Up</a></td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                         <td valign="top" class="subtitle">Ski-jumping result information system</td>
                                                         </tr>
                                                         <tr>
                                                         <td valign="top">
-                                                                <table border="0" width="488" cellspacing="0" cellpadding="0">
+                                                                <table border="0" width="550" cellspacing="0" cellpadding="0">
                                                                         <tr>
-                                                                                <td valign="top" background="../images/dotline_h.gif" width="488"><img src="/images/pixel.gif" alt="" width="1" height="1" border="0"></td>
+                                                                                <td valign="top" background="../images/dotline_h.gif" width="550"><img src="/images/pixel.gif" alt="" width="1" height="1" border="0"></td>
                                                                         </tr>
                                                                         <tr>
                                                                                 <td valign="top" class="bodytext">
                                                                                                 <!-- end header -->
+                                                                                                
 

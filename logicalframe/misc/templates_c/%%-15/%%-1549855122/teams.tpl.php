@@ -1,22 +1,22 @@
-<?php /* Smarty version 2.4.2, created on 2004-02-09 00:03:28
+<?php /* Smarty version 2.4.2, created on 2004-02-09 20:27:43
          compiled from olympics/teams.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include("olympics/header.tpl", array());
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-
+<a href="index.php" class="pathlinks">Home</a> -> <a href="teams.php" class="pathlinks">Teams</a><br>
 <!--begin main -->
                                                                                                 <br>
                                                                                                 
-                                                                                                <table width="500" cellspacing="0" cellpadding="0" border="0">
+                                                                                                <table width="550" cellspacing="0" cellpadding="0" border="0">
                                                                                                         <tr>
                                                                                                         <td width="155" class="bodytext" valign="top"><b>Team</b></td>          
                                                                                                                 <td width="345" class="bodytext" align="left" valign="top"><b>Country</b></td>                                                                                          
                                                                                                         </tr>
                                                                                                         <!-- start loop for each team per country -->
                                                                                                         <tr>
-                                                                                                        <td colspan="2" class="bodytext" valign="top"><img src="images/sep_line.gif" width="500" height="26" alt="" border="0"></td>                                                                                                       
+                                                                                                        <td colspan="2" class="bodytext" valign="top"><img src="images/sep_line.gif" width="550" height="26" alt="" border="0"></td>                                                                                                       
                                                                                                         </tr>
                                                                                                         <tr>
                                                                                                         <td width="155" class="bodytext" valign="top">Team A</td>               
@@ -34,7 +34,7 @@ unset($_smarty_tpl_vars);
                                                                                                         </tr>
                                                                                                         <!-- end loop -->
                                                                                                         <tr>
-                                                                                                        <td colspan="2" class="bodytext" valign="top"><img src="images/sep_line.gif" width="500" height="26" alt="" border="0"></td>                                                                                                       
+                                                                                                        <td colspan="2" class="bodytext" valign="top"><img src="images/sep_line.gif" width="550" height="26" alt="" border="0"></td>                                                                                                       
                                                                                                         </tr>
                                                                                                         <tr>
                                                                                                         <td width="155" class="bodytext" valign="top">Team B</td>               
@@ -58,4 +58,4 @@ unset($_smarty_tpl_vars);
 $this->_smarty_include("olympics/footer.tpl", array());
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
+ ?>

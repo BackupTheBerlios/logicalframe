@@ -1,30 +1,38 @@
 {include file=olympics/header.tpl}
-
+<a href="index.php" class="pathlinks">Home</a> -> <a href="news.php" class="pathlinks">News</a>
         <!-- begin main -->
-                                                                                                <br>
+                                                                                                <br><br>
                                                                                                 
-                                                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                                                <table width="550" cellspacing="0" cellpadding="0" border="0">
                                                                                                         <tr>
                                                                                                         <td class="bodytext" valign="top"><b>Headline news:</b></td>            
-                                                                                                                <td class="bodytext" align="right" valign="top"><b>Saturday, 7 February 2004</b></td>                                                                                           
+                                                                                                                <td class="bodytext" align="right" valign="top">&nbsp;</td>                                                                                           
                                                                                                         </tr>
                                                                                                 </table>
                                                                                                 <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
                                                                                                 <!-- start loop for news items -->              
                                                                                                 <tr>
                                                                                                 <td valign="top">
-                                                                                                                <img src="images/sep_line.gif" width="500" height="26" alt="" border="0"><br>
+                                                                                                                <img src="images/sep_line.gif" width="550" height="26" alt="" border="0"><br>
                                                                                                                 <img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">
-                                                                                                                <span class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit </span><br><br>
-                                                                                                                <span class="bodytext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Duis autem vel eum zytrab ytset in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
+                                                                                                                <span class="title">Important constructions</span><br><br>
+                                                                                                                <span class="bodytext">Jean-Claude Killy, Chairman of the Coordination Commission, and the IOC team paid a visit to the governmental agency in charge of the construction of the sports venues and road infrastructure. He congratulated them for the progress made, particularly on the bobsleigh run in Pariol Greniere and the ski jumping hills in Pragelato. As for all organising committees, the construction schedule is tight, but the necessary measures will be taken - particularly for the construction of the roads leading from Turin to the mountains.</span>
                                                                                                         </td>                       
                                                                                                 </tr>   
                                                                                                         <tr>
                                                                                                 <td valign="top">
-                                                                                                                <img src="images/sep_line.gif" width="500" height="26" alt="" border="0"><br>
+                                                                                                                <img src="images/sep_line.gif" width="550" height="26" alt="" border="0"><br>
                                                                                                                 <img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">
-                                                                                                                <span class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit </span><br>
-                                                                                                                <span class="bodytext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Duis autem vel eum zytrab ytset in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
+                                                                                                                <span class="title">Real cooperation</span><br><br>
+                                                                                                                <span class="bodytext">The regional and local authorities presented their activities in the framework of the preparation for the 2006 Olympic Games. A real spirit of cooperation allowed the problems met to date to be quickly resolved; with everyone working for the success of these Games.</span>
+                                                                                                        </td>                       
+                                                                                                </tr>
+																								<tr>
+                                                                                                <td valign="top">
+                                                                                                                <img src="images/sep_line.gif" width="550" height="26" alt="" border="0"><br>
+                                                                                                                <img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">
+                                                                                                                <span class="title">Need for more visibility</span><br><br>
+                                                                                                                <span class="bodytext">The communication activities were among the many topics dealt with. The IOC and the Organising Committee share the common view that TOROC needs to achieve greater visibility, on both a national and international level. Although several marketing contracts were concluded recently, there is a clear link to be established between the visibility and reputation of the event and the interest of sponsors. "It's a pity that Italians and the rest of the world are not yet aware that, in 2006, Turin will stage extraordinary Winter Games", Gilbert Felli stated after the meetings.</span>
                                                                                                         </td>                       
                                                                                                 </tr>
                                                                                                 <!-- end loop for news-->                                                                                       

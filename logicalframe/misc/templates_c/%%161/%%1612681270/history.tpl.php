@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.4.2, created on 2004-02-09 00:05:32
+<?php /* Smarty version 2.4.2, created on 2004-02-09 18:15:02
          compiled from olympics/history.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include("olympics/header.tpl", array());

@@ -16,12 +16,12 @@
   $page->addItem("InputField","emailadres","in_template");
   $page->m_items['emailadres']->addValidation("IsEmail");
   $page->m_items['emailadres']->setSize("40");
-  $page->m_items['emailadres']->m_validationrule->setErrorMessage("please enter a valid email adres");
+  $page->m_items['emailadres']->m_validationrule->setErrorMessage("Please enter a valid emailaddress!");
  
   $page->addItem("PasswordField","passwd","in_template");
   $page->m_items['passwd']->addValidation("NotEmpty","3");
   $page->m_items['passwd']->setSize("40");
-  $page->m_items['passwd']->m_validationrule->setErrorMessage("Please enter passwd with at least 5 characters");
+  $page->m_items['passwd']->m_validationrule->setErrorMessage("Please enter passwd with at least 5 characters!");
  
   // show the page
   $page->showPlatformPage("processForm");

@@ -1,4 +1,5 @@
 {include file=olympics/header.tpl}
+<a href="index.php" class="pathlinks">Home</a> -> <a href="scores.php" class="pathlinks">Scores</a><br><br>
 
                                                                                                By clicking on the dates here below you can view all results of that particular day.                                                                                    
                                                                                                 <ul>
