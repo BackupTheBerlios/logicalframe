@@ -32,7 +32,7 @@
           $checked="checked";
         }
   		  $this->m_item.="<tr>
-                        <td width=\"100%\" valign=\"middle\">".$extra."
+                        <td width=\"100%\" valign=\"middle\" class=\"formtext\">".$extra."
                         <input type=\"radio\" name=\"".$this->m_name."\" value=\"".$value."\" ".$checked."></td></tr>";
       } 
       $this->m_item.="</table>";
