@@ -16,7 +16,7 @@ Such request can be done by searching on data types, for example name or last na
         <td width="110" class="formtext" valign="top"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">Search</td>
         <td>{$item_search}<br><br></td>
 </tr>   
-        <tr>
+        <tr class="formtext">
         <td width="110" class="formtext" valign="middle"><img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle"></td>
         <td width="150" height="30" class="formtext" valign="middle">{$item_criteria}</td>
 </tr>

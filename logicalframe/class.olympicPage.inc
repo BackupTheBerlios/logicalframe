@@ -412,11 +412,21 @@ SELECT
       $query= "INSERT INTO 
                  `players` (`surname` , `height` , `weight`, `nationality`)
                VALUES ('$name','$height', '$weight', '$nationality')";
+
       $this->useDb();
       if($this->m_db->query($query))
       {
         $result2 = $this->m_db->getAll("SELECT LAST_INSERT_ID() as last_id",DB_FETCHMODE_ASSOC);
         debug(__CLASS__."::".__FUNCTION__." : returning player_id");
+ 
+        $insert = "INSERT INTO `schedules` (`round_id` , `player_id` ,`timestamp`, `ktype_id` )
+                                  VALUES ('1', '".$result2[0]['last_id']."', '2006-01-16 12:30:32', '1')";
+      
+        if($this->m_db->query($insert))
+        {
+          debug(__CLASS__."::".__FUNCTION__." : scheduled for the 1st round");
+        }
+
         return $result2[0]['last_id'];
       }
       else

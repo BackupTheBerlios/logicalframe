@@ -1,5 +1,4 @@
 {include file=olympics/header.tpl}
-<a href="index.php" class="pathlinks">Home</a> -> <a href="addplayer.php" class="pathlinks">Add Player</a>
       <br><br>
       Please fill in all necessary fields.<br>
       <p>

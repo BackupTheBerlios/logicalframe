@@ -91,7 +91,7 @@
     global $page;
 
     // insert player
-    $player_id = $page->addPlayer($_POST);
+    $player_id = $page->addPlayer($_POST,1);
     if($player_id!="")
     {
       if($_POST['addteam'])

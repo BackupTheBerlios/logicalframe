@@ -1,7 +1,6 @@
 {include file=olympics/header.tpl}
 
 
-  <a href="index.php" class="pathlinks">Home</a> -> <a href="judge.php" class="pathlinks">Judge Jumps</a>
       <br><br>
 <b>{$errors}
 {$message}</b>

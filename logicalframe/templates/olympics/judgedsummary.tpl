@@ -1,5 +1,4 @@
 {include file=olympics/header.tpl}
-<a href="index.php" class="pathlinks">Home</a> -> <a href="judgesummary.php" class="pathlinks">Judge Summary</a><br><br>
   This information is added into the database
       <table border="0" width="400" cellspacing="0" cellpadding="0">
       <tr>

@@ -44,11 +44,12 @@
      {
        //forward
        $forwardstring = "search.php?criteria=".$_POST['criteria']."&search=".$_POST['search'];
-       $page->forwardTo($forwardstring);
      }
-    }
-    else
-    {
+     else
+      {
+       $forwardstring = "search.php?noresults=true";
+      }
+    $page->forwardTo($forwardstring);
     }
   }
 ?>

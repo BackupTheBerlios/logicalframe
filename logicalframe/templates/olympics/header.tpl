@@ -21,7 +21,7 @@
         <td width="1"><img src="images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
         <td width="125" align="center" class="topnav_off" bgcolor="#666666"><a href="scores.php" class="topnav">Scores</a></td>
         <td width="1"><img src="/images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
-        <td width="125" align="center" class="topnav_off" bgcolor="#B91450"><a href="teams.php" class="topnav">Teams</a></td>
+        <td width="125" align="center" class="topnav_off" bgcolor="#B91450"><a href="history.php" class="topnav">History</a></td>
         <td width="1"><img src="/images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
         <td width="125" align="center" class="topnav_off" bgcolor="#666666"><a href="news.php" class="topnav">News</a></td>
                 <td width="1"><img src="/images/pixel_white.gif" alt="" width="1" height="30" border="0"></td>
@@ -43,12 +43,6 @@
                                 <tr>
                                         <td>
                         <table width="226" cellspacing="0" cellpadding="0" border="0" bgcolor="#eeeeee">
-                                                        <tr>
-                                <td bgcolor="#eeeeee" height="20">
-                                        <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
-                                        <a href="history.php" class="menulinks">-History-</a>
-                                    </td>
-                                                        </tr>
                                                         <tr>
                                 <td bgcolor="#CCCCCC">
                                         <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
@@ -140,17 +134,6 @@
    </td>
 
 </tr>
-
-<tr>
-
-   <td bgcolor="#eeeeee" height="20">
-     <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
-                                             <a href="addplayer.php" class="menulinks">-Schedule Rounds-</a>
-   </td>
-
-</tr>
-
-
 <tr>
                                                                 
    <td bgcolor="#CCCCCC">
