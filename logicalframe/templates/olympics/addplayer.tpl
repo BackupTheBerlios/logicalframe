@@ -1,5 +1,6 @@
 {include file=olympics/header.tpl}
-      <br>
+<a href="index.php" class="pathlinks">Home</a> -> <a href="addplayer.php" class="pathlinks">Add Player</a>
+      <br><br>
       Please fill in all necessary fields.<br>
       <p>
 {$errors}
@@ -43,7 +44,7 @@
               <td width="200" class="formtext">&nbsp;</td>
               <td>
                  <img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">
-                 <input type ="submit" value="submit"><br>
+                 <a href="javascript:document.forms[0].submit();" class="more">add player</a><br>
       </tr>
       </table>
       {$form_end}

@@ -76,18 +76,96 @@
                                         <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
                                 </td>
                                                         </tr>
-                                <tr>
-                                <td bgcolor="#eeeeee" height="20">
-                                        <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
-                                        <a href="search.php" class="menulinks">-Search-</a>
-                                    </td>
-                                                        </tr>
-                            <tr>
-                                                                <td bgcolor="#CCCCCC">
-                                        <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
-                                </td>
-                                                        </tr>                                                   
-                                                </table>
+                              
+
+
+<tr>
+
+   <td bgcolor="#eeeeee" height="20">
+     <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
+                                             <a href="search.php" class="menulinks">-Search-</a>
+                                    
+   </td>
+
+</tr>
+                            
+<tr>
+                                                                
+   <td bgcolor="#CCCCCC">
+   
+     <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
+                                
+   </td>
+
+</tr>
+
+{if $role=="judge"}
+
+
+<tr>
+
+   <td bgcolor="#eeeeee" height="20">
+     <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
+                                             <a href="addplayer.php" class="menulinks">-Add Player-</a>
+   </td>
+
+</tr>
+ 
+<tr>
+                                                                
+   <td bgcolor="#CCCCCC">
+   
+     <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
+                                
+   </td>
+
+</tr>
+
+<tr>
+
+   <td bgcolor="#eeeeee" height="20">
+     <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
+                                             <a href="judge.php" class="menulinks">-Judge Jumps-</a>
+   </td>
+
+</tr>
+
+
+<tr>
+                                                                
+   <td bgcolor="#CCCCCC">
+   
+     <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
+                                
+   </td>
+
+</tr>
+
+<tr>
+
+   <td bgcolor="#eeeeee" height="20">
+     <img src="images/menu_arrow_grey.gif" border="0" alt="" align="absmiddle" width="25" height="20">
+                                             <a href="addplayer.php" class="menulinks">-Schedule Rounds-</a>
+   </td>
+
+</tr>
+
+
+<tr>
+                                                                
+   <td bgcolor="#CCCCCC">
+   
+     <img src="images/pixel.gif" width="256" height="1" border="0" alt="">
+                                
+   </td>
+
+</tr>
+{/if}
+
+
+
+
+</table>
                                         </td>
                                 </tr>
                         </table>
@@ -113,8 +191,4 @@
                                                                                                 <!-- end header -->
 {if $role=="judge"}
 <p><br>
-Logged in as a judge: <br><br>
-<a href="addplayer.php">Add player</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="addplayer.php">Schedule rounds</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="judge.php">Judge Jumps</a>&nbsp;&nbsp;&nbsp;&nbsp;
-{/if}
+Logged in as a judge: <br><br>{/if}

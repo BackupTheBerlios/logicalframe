@@ -1,7 +1,9 @@
 {include file=olympics/header.tpl}
 
 
-  <b>{$errors}
+  <a href="index.php" class="pathlinks">Home</a> -> <a href="judge.php" class="pathlinks">Judge Jumps</a>
+      <br><br>
+<b>{$errors}
 {$message}</b>
     
    {$form_begin}
@@ -73,7 +75,7 @@
               <td width="200" class="formtext">&nbsp;</td>
               <td>
                  <img src="images/arrow.gif" width="11" height="17" alt="" border="0" align="absmiddle">
-                 <input type ="submit" value="submit"><br>
+                 <a href="javascript:document.forms[0].submit();" class="more">judge</a><br>
 
       </tr>
       {/if} 

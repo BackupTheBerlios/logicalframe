@@ -16,14 +16,12 @@
                                                                                                         <td width="155" class="bodytext" valign="top">Team A</td>               
                                                                                                                 <td width="345" class="bodytext" align="left" valign="top">
                                                                                                                 <!-- loop country for the hyperlink -->
-                                                                                                                <a href="player.php" class="pathlinks">Country A, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country B, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country C, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country D, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country E, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country F, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country G </a>
-                                                                                                                <!-- end loop -->
+                                                                                                                <a href="addplayer.php" class="pathlinks">Nehterlands, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">USA, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Austria, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Germany, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Australia, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Korea, </a>                                                                                                             <!-- end loop -->
                                                                                                                 </td>                                                                                           
                                                                                                         </tr>
                                                                                                         <!-- end loop -->
@@ -34,13 +32,13 @@
                                                                                                         <td width="155" class="bodytext" valign="top">Team B</td>               
                                                                                                                 <td width="345" class="bodytext" align="left" valign="top">
                                                                                                                 <!-- loop country for the hyperlink -->
-                                                                                                                <a href="player.php" class="pathlinks">Country A, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country B, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country C, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country D, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country E, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country F, </a>
-                                                                                                                <a href="player.php" class="pathlinks">Country G </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Norway, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Finland, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Japan, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Czechoslovakia, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Poland, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Sweden, </a>
+                                                                                                                <a href="addplayer.php" class="pathlinks">Zwitserland </a>
                                                                                                                 <!-- end loop -->
                                                                                                                 </td>                                                                                           
                                                                                                         </tr>

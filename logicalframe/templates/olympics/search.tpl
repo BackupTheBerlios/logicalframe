@@ -1,4 +1,5 @@
 {include file=olympics/header.tpl}
+<a href="index.php" class="pathlinks">Home</a> -> <a href="search.php" class="pathlinks">Search</a><br>
 <!-- begin main -->
 <br>
 The Results Information System provides the users to make a search request. Such request can be done by searching on data types, for example name or last name of a sport participant. It's also possible to make a search request to view a particular Olympic history records (statistics). This can be done by using the following criteria (data type) such as date. The system will search in the Results Information database if the requested search data is available.<br>                                                                                              
