@@ -111,5 +111,4 @@
                                                                         <tr>
                                                                                 <td valign="top" class="bodytext">
                                                                                                 <!-- end header -->
-                                                                                                
-
+  {if $role=="judge"}Hello judge{/if}
